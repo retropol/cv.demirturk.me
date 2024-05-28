@@ -1,134 +1,269 @@
-<!DOCTYPE html>
-<html data-bs-theme="dark" lang="en" data-bss-forced-theme="dark">
+﻿<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mehmet Demirtürk - Portfolio</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: #121212;
+                color: #ffffff;
+                font-family: 'Arial', sans-serif;
+            }
+            .navbar, footer {
+                background-color: #1f1f1f;
+            }
+            .jumbotron {
+                background-color: #212529;
+                color: #ffffff;
+                border-radius: 10px;
+                padding: 2rem 1rem;
+            }
+            .card {
+                background-color: #2c2c2c;
+                color: #ffffff;
+                border: 1px solid #444;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+            .card-header {
+                background-color: #444;
+                color: #ffffff;
+                font-weight: bold;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .card-body {
+                padding: 20px;
+            }
+            .footer {
+                background-color: #1f1f1f;
+                padding: 20px;
+            }
+            a {
+                color: #0d6efd;
+            }
+            a:hover {
+                color: #0a58ca;
+            }
+            .info-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.5rem;
+            }
+            .info-item i {
+                margin-right: 0.5rem;
+            }
+        </style>
+    </head>
+    
+    <body>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>cv.demirturk.me</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/LinkedIn-like-Profile-Box.css">
-    <link rel="stylesheet" href="assets/css/Navbar-Centered-Links-icons.css">
-</head>
-
-<body style="color: #000000;background: var(--bs-body-bg);">
-    <nav class="navbar navbar-expand-md bg-dark text-start align-items-center align-content-center py-3" data-bs-theme="dark" style="width: auto;position: relative;display: flex;padding: 0px 0px;padding-left: 0px;margin-right: 0px;">
-        <div class="container">
-            <div class="collapse navbar-collapse" id="navcol-3">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Hakkımda</a></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projelerim</a></li>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education-internship">Eğitim ve Staj</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#language-skills">Dil Becerileri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#digital-skills">Dijital Beceriler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projeler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates">Sertifikalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">İletişim</a>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <div class="container" style="background: var(--bs-secondary-bg);">
-        <div class="row text-light d-flex" style="height: auto;background: var(--bs-secondary-bg);margin: 0px;padding: 0;min-height: 570px;padding-top: 10px;position: relative;display: none;">
-            <div class="col-md-4 col-xxl-3" style="height: 282px;border-radius: 0;border-width: 0px;border-color: rgb(39,42,45);box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">
-                <div class="row" style="height: auto;">
-                    <div class="col" style="border-radius: 26px;">
-                        <div class="text-center border rounded-0 shadow-sm profile-box" style="width: auto;height: 166px;margin: 5px;padding: 11px;background: #1e1e1e;border-radius: 1px;border: 2px none #ffffff;border-top: 1px none #000000;border-right-style: none;border-left-style: none;">
-                            <div style="height: 50px;background-image: url(&quot;assets/img/bg-pattern.png&quot;);background-color: rgba(54,162,177,0);"></div>
-                            <div><img class="rounded-circle" src="assets/img/bg-cta.jpg" width="60" height="60" style="background-color: rgb(255,255,255);padding: 2px;"></div>
-                            <div style="height: 80px;">
-                                <h4>Mehmet Demirtürk</h4>
-                                <p style="font-size: 12px;">Bilişim Sistemleri Mühendisi</p>
-                            </div>
-                        </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <div class="container mt-5">
+            <div class="jumbotron text-center">
+                <div class="row">
+                    <div class="col-md-4 text-md-left text-center">
+                        <img src="img/your-photo.jpg" alt="Your Photo" class="rounded-circle" width="150">
+                        <h1 class="display-4">Mehmet Demirtürk</h1>
+                        <p class="lead">Bilişim Sistemleri Mühendisi</p>
                     </div>
-                </div>
-                <div class="row text-start d-flex justify-content-sm-center" style="width: auto;position: relative;height: 106px;border-width: 1px;padding: 10px;">
-                    <div class="col-xxl-10" style="padding: 0px;padding-right: 0px;">
-                        <div class="row d-flex justify-content-center align-items-center" style="width: auto;height: 35px;">
-                            <div class="col-2 col-xxl-3 d-flex d-sm-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" style="height: inherit;max-width: 25%;"><a href="mailto:demirturk.1998@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="font-size: 27px;">
-
-                                        <path d="M2.00333 5.88355L9.99995 9.88186L17.9967 5.8835C17.9363 4.83315 17.0655 4 16 4H4C2.93452 4 2.06363 4.83318 2.00333 5.88355Z" fill="currentColor"></path>
-                                        <path d="M18 8.1179L9.99995 12.1179L2 8.11796V14C2 15.1046 2.89543 16 4 16H16C17.1046 16 18 15.1046 18 14V8.1179Z" fill="currentColor"></path>
-                                    </svg></a></div>
-                            <div class="col-2 col-xxl-3 d-flex d-sm-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" style="height: inherit;"><a href="https://github.com/retropol" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 512 512" width="1em" height="1em" fill="currentColor" style="font-size: 27px;">
-                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
-                                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
-                                    </svg></a></div>
-                            <div class="col-2 col-xl-3 col-xxl-3 offset-xxl-0 d-flex d-sm-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" style="height: inherit;max-width: 25%;"><a href="https://www.linkedin.com/in/mehmetdemirturk/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" style="font-size: 27px;">
-                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
-                                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
-                                    </svg></a></div>
-                            <div class="col-2 col-xl-3 d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" style="height: inherit;"><a href="tel:+905515520096"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone-fill" style="font-size: 27px;">
-                                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
-                                    </svg></a></div>
-                        </div>
-                        <div class="row d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center align-items-xl-center justify-content-xxl-center align-items-xxl-center" style="margin-right: 0px;margin-left: 0px;margin-top: 10px;">
-                            <div class="col-4 col-md-6 col-xxl-5 d-sm-flex d-xxl-flex justify-content-sm-center justify-content-xxl-center align-items-xxl-center" style="padding-top: 0px;"><a href="assets/CV_Mehmet_Demirturk.pdf" target="_blank">My Cv Link</a></div>
-                        </div>
+                    <div class="col-md-8 text-md-left text-center">
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i> <span>Ev: 77000, Yalova, Türkiye</span></div>
+                        <div class="info-item"><i class="fas fa-envelope"></i> <span>E-posta: demirturk.1998@gmail.com</span></div>
+                        <div class="info-item"><i class="fas fa-phone"></i> <span>Telefon: (+90) 5515520096</span></div>
+                        <div class="info-item"><i class="fas fa-globe"></i> <span>Web sitesi: <a href="http://cv.demirturk.me" target="_blank">cv.demirturk.me</a></span></div>
+                        <div class="info-item"><i class="fab fa-linkedin"></i> <span>LinkedIn: <a href="https://www.linkedin.com/in/mehmetdemirturk/" target="_blank">https://www.linkedin.com/in/mehmetdemirturk/</a></span></div>
+                        <div class="info-item"><i class="fab fa-github"></i> <span>GitHub: <a href="https://github.com/retropol" target="_blank">https://github.com/retropol</a></span></div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6 col-xxl-6 offset-sm-0 offset-xxl-0" style="height: initial;padding: 0px;">
-                <div style="padding-top: 0px;padding-right: 15px;padding-left: 15px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button" style="background: rgba(13,110,253,0);border-radius: 0px;border-style: none;border-bottom-style: solid;border-bottom-color: rgb(255,255,255);">Hakkımda</a>
-                    <div class="collapse show" id="collapse-1">
-                        <p style="text-align: justify;padding: 0px;padding-right: 0px;padding-left: 0px;"><br>Bilişimdeki kariyerime, Sakarya Üniversitesi'nde Bilişim Sistemleri Mühendisliği bölümünde aldığım eğitimle başladım. Bu eğitim sürecinde, temel bilişim konularında sağlam bir bilgi birikimi edindim ve yazılım geliştirme süreçlerine hakim oldum. Özellikle web teknolojileri ve mobil uygulama alanında kendimi geliştirdim.<br><br>Bilişim sistemleri konusunda sürekli öğrenmeye tutkuluyum. Takım çalışmasıyla ortak hareket edebilen, analitik, hızlı problem çözebilen ve yeni teknolojilere meraklı biriyim. Kariyer hedefim, bu alanda yenilikçi projelerde yer alabilmek ve sürekli öğrenerek kendimi geliştirmektir.<br><br></p>
-                    </div>
+        
+            <div id="about" class="card">
+                <div class="card-header">Hakkımda</div>
+                <div class="card-body">
+                    <p>Bilişimdeki kariyerime, Sakarya Üniversitesi'nde Bilişim Sistemleri Mühendisliği bölümünde aldığım eğitimle başladım. Bu eğitim sürecinde, temel bilişim konularında sağlam bir bilgi birikimi edindim ve yazılım geliştirme süreçlerine hakim oldum. Özellikle web teknolojileri ve mobil uygulama alanında kendimi geliştirdim. Bilişim sistemleri konusunda sürekli öğrenmeye tutkuluyum. Takım çalışmasıyla ortak hareket edebilen, analitik, hızlı problem çözebilen ve yeni teknolojilere meraklı biriyim. Kariyer hedefim, bu alanda yenilikçi projelerde yer alabilmek ve sürekli öğrenerek kendimi geliştirmektir.</p>
                 </div>
-                <div><a class="btn btn-primary d-xxl-flex justify-content-xxl-start" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-2" href="#collapse-2" role="button" style="background: rgba(13,110,253,0);border-radius: 0px;border-style: none;border-bottom-style: solid;border-bottom-color: rgb(255,255,255);">Eğitim ve Staj</a>
-                    <div class="collapse show" id="collapse-2">
-                        <div>
-                            <div class="col">
-                                <h4 style="padding: 12px;">Front End Developer<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor">
-                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
-                                        <path d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.6 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path>
-                                    </svg><br></h4>
-                                <h6 style="color: #009688;padding: 12px;"><i class="fa fa-calendar"></i>&nbsp; &nbsp;Mar 2012 - Dec 2014</h6>
-                                <p style="padding: 12px;">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="col">
-                                <h4 style="padding: 12px;">Front End Developer<br></h4>
-                                <h6 style="color: #009688;padding: 12px;"><i class="fa fa-calendar"></i>&nbsp; &nbsp;Mar 2012 - Dec 2014</h6>
-                                <p style="padding: 12px;">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="col">
-                                <h4 style="padding: 12px;">Front End Developer<br></h4>
-                                <h6 style="color: #009688;padding: 12px;"><i class="fa fa-calendar"></i>&nbsp; &nbsp;Mar 2012 - Dec 2014</h6>
-                                <p style="padding: 12px;">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="col">
-                                <h4 style="padding: 12px;">Front End Developer<br></h4>
-                                <h6 style="color: #009688;padding: 12px;"><i class="fa fa-calendar"></i>&nbsp; &nbsp;Mar 2012 - Dec 2014</h6>
-                                <p style="padding: 12px;">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        
+            <div id="education-internship" class="card">
+                <div class="card-header">Eğitim ve Staj</div>
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            <strong>[ 2019 – 2024 ] Bilişim Sistemleri Mühendisliği</strong><br>
+                            Sakarya Üniversitesi <br>
+                            Şehir: Sakarya | Ülke: Türkiye
+                        </li>
+                        <li>
+                            <strong>[ 03/2024 – 04/2024 ] Yazılım Stajı</strong><br>
+                            ARMİS Bilişim Teknolojileri <br>
+                            <a href="https://www.armisbilisim.com/" target="_blank">https://www.armisbilisim.com/</a> <br>
+                            Şehir: İstanbul | Ülke: Türkiye
+                        </li>
+                        <li>
+                            <strong>[ 08/2023 – 10/2023 ] İş Geliştirme Stajı</strong><br>
+                            Yalova Makine OSB <br>
+                            <a href="https://yalovaosb.org/" target="_blank">https://yalovaosb.org/</a> <br>
+                            Şehir: Yalova | Ülke: Türkiye
+                        </li>
+                        <li>
+                            <strong>[ 11/2022 – 08/2023 ] Flutter Bootcamp</strong><br>
+                            Google Oyun ve Uygulama Akademisi <br>
+                            <a href="https://oyunveuygulamaakademisi.com/" target="_blank">https://oyunveuygulamaakademisi.com/</a>
+                        </li>
+                    </ul>
                 </div>
-                <div><a class="btn btn-primary d-xxl-flex justify-content-xxl-start" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" href="#collapse-3" role="button" style="background: rgba(13,110,253,0);border-radius: 0px;border-style: none;border-bottom-style: solid;border-bottom-color: rgb(255,255,255);">Dil Becerileri</a>
-                    <div class="collapse" id="collapse-3">
-                        <p>Collapse content.</p>
-                    </div>
+            </div>
+        
+            <div id="language-skills" class="card">
+                <div class="card-header">Dil Becerileri</div>
+                <div class="card-body">
+                    <p><strong>Anadili(leri): Türkçe</strong></p>
+                    <p><strong>Diğer dil(ler): İngilizce</strong><br>
+                    DİNLEME: B2 | OKUMA: B2 | YAZMA: B1 | KONUŞMA ÜRETİMİ: B1 | KONUŞMALI ETKİLEŞİM: B1</p>
+                    <p><small>Seviyeler: A1 ve A2: Temel kullanıcı; B1 ve B2: Bağımsız kullanıcı; C1 ve C2: Usta kullanıcı</small></p>
                 </div>
-                <div><a class="btn btn-primary d-xxl-flex justify-content-xxl-start" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-4" href="#collapse-4" role="button" style="background: rgba(13,110,253,0);border-radius: 0px;border-style: none;border-bottom-style: solid;border-bottom-color: rgb(255,255,255);">Dijital Beceriler</a>
-                    <div class="collapse" id="collapse-4">
-                        <p>Collapse content.</p>
-                    </div>
+            </div>
+        
+            <div id="digital-skills" class="card">
+                <div class="card-header">Dijital Beceriler</div>
+                <div class="card-body">
+                    <ul>
+                        <li>Programlama Dilleri: C#, C, Python, Flutter Dart</li>
+                        <li>Veri tabanı: MsSQL, MySQL, Google Firebase</li>
+                        <li>Office: Microsoft Word, Microsoft PowerPoint, Microsoft Excel</li>
+                        <li>Web: HTML, CSS, Bootstrap, .NET, MVC Architecture, Entity Framework Core, .NET Web API</li>
+                        <li>Diğer: Cisco Packet Tracer, Git, Github, .NET Forms, Basic graphic design - Canva, Docker Compose</li>
+                    </ul>
                 </div>
-                <div><a class="btn btn-primary d-xxl-flex justify-content-xxl-start" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-5" href="#collapse-5" role="button" style="background: rgba(13,110,253,0);border-radius: 0px;border-style: none;border-bottom-style: solid;border-bottom-color: rgb(255,255,255);">Sertifikalar</a>
-                    <div class="collapse" id="collapse-5">
-                        <p>Collapse content.</p>
-                    </div>
+            </div>
+        
+            <div id="projects" class="card">
+                <div class="card-header">Projeler</div>
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            <strong>Metin Madenciliği ile E-Ticaret Sitelerindeki Yorumları İnceleme</strong><br>
+                            Bu proje, e-ticaret sitelerindeki ürünlerin yorumlarını doğal dil işleme algoritmalarıyla değerlendirmeyi amaçlamaktadır.<br>
+                            <strong>Kullanılan Teknolojiler:</strong> Python, Tkinter, Web Scraping, NLP<br>
+                            <a href="#" target="_blank">Proje Tanıtım Videosu</a> | Bitirme Tezi
+                        </li>
+                        <li>
+                            <strong>Flutter ile Uygulama Geliştirme (PetCare App)</strong><br>
+                            PetCare App, hayvan sahiplerinin bulundukları konuma en yakın petshoplara, otellere, veterinerlere, barınaklara ve hayvanlarla ilgili bilgilere erişimi kolaylaştırır.<br>
+                            <strong>Kullanılan Teknolojiler:</strong> Flutter Dart, Google Firebase, Authentication, Cloud Firestore, CRUD<br>
+                            <a href="#" target="_blank">Proje Tanıtım Videosu</a> | <a href="https://github.com/retropol/PetCareApp" target="_blank">GitHub</a>
+                        </li>
+                        <li>
+                            <strong>.NET ile Web Projesi</strong><br>
+                            .Net kullanılarak yapılan dinamik web blog projesidir.<br>
+                            <strong>Kullanılan Teknolojiler:</strong> C#, MVC Architecture, .Net Core 5, MsSQL<br>
+                            <a href="https://github.com/retropol/WebProject" target="_blank">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div id="certificates" class="card">
+                <div class="card-header">Sertifikalar</div>
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            <strong>[ 07/2023 ] Google Project Management</strong><br>
+                            <a href="https://coursera.org/share/36bfacfebbbc9a20bfbcbe6441321a70" target="_blank">Bağlantı</a>
+                        </li>
+                        <li>
+                            <strong>[ 08/2023 ] Oyun ve Uygulama Akademisi Mezuniyet Sertifikası 2023 (Flutter)</strong><br>
+                            <a href="https://verified.sertifier.com/tr/verify/91459621078384/" target="_blank">Bağlantı</a>
+                        </li>
+                        <li>
+                            <strong>[ 08/2023 ] Oyun ve Uygulama Akademisi: Teknoloji Girişimciliği</strong><br>
+                            <a href="https://verified.sertifier.com/tr/verify/41893613657017/" target="_blank">Bağlantı</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div id="contact" class="card">
+                <div class="card-header">İletişim</div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Ad</label>
+                            <input type="text" class="form-control" id="name" placeholder="Adınız">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email adresi</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesaj</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+        
+        <!-- Footer -->
+        <footer class="footer text-white text-center py-3">
+            <p>&copy; 2024 Mehmet Demirtürk. All Rights Reserved.</p>
+            <p>
+                 Ev : 77000, Yalova, Türkiye <br>
+                 E-posta: demirturk.1998@gmail.com <br>
+                 Telefon: (+90) 5515520096 <br>
+                 Web sitesi: <a href="http://cv.demirturk.me" target="_blank">cv.demirturk.me</a> <br>
+                 LinkedIn: <a href="https://www.linkedin.com/in/mehmetdemirturk/" target="_blank">LinkedIn</a> <br>
+                 GitHub: <a href="https://github.com/retropol" target="_blank">GitHub</a>
+            </p>
+        </footer>
+        
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+        </html>
+        
 </html>
